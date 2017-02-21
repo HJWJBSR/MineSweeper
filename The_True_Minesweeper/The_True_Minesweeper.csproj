@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72887CEB-9CF7-46E2-A09C-55DD984C2775}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>The_True_Minesweeper</RootNamespace>
+    <AssemblyName>The_True_Minesweeper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Manager.Animation">
+      <HintPath>D:\New\ASNET.COMMON\Common.Manager.Animation.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Manager.Device">
+      <HintPath>D:\New\ASNET.COMMON\Common.Manager.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Manager.GameWindow">
+      <HintPath>D:\New\ASNET.COMMON\Common.Manager.GameWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Manager.Information">
+      <HintPath>D:\New\ASNET.COMMON\Common.Manager.Information.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Manager.Physics">
+      <HintPath>D:\New\ASNET.COMMON\Common.Manager.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Manager.Window">
+      <HintPath>D:\New\ASNET.COMMON\Common.Manager.Window.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Input.cs" />
+    <Compile Include="Control\MainPage.cs" />
+    <Compile Include="Control\MainWindow.cs" />
+    <Compile Include="Minesweeper\Game.cs" />
+    <Compile Include="Minesweeper\Main.cs" />
+    <Compile Include="Minesweeper\SweeperSource.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chijiang_.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
