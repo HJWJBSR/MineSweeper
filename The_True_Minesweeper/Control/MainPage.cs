@@ -25,17 +25,28 @@ namespace The_True_Minesweeper.Minesweeper
 
         protected override void OnMouseDown(object sender, MouseClickEventArgs e)
         {
-            if (e.button == MouseButton.LeftButton)
-                Input.LeftButton = true;
-            else
-            if (e.button == MouseButton.RightButton)
-                Input.RightButton = true;
+            SweeperSource.Is_Mouse_Down = true;
+            SweeperSource.Judge_Pos(true);
             base.OnMouseDown(sender, e);
         }
 
         protected override void OnMouseUp(object sender, MouseClickEventArgs e)
         {
             Input.LeftButton = Input.RightButton = false;
+            SweeperSource.Is_Mouse_Down = false;
+            if (e.button == MouseButton.LeftButton)
+            {
+                Input.LeftButton = true;
+                SweeperSource.Judge_Pos(true);
+                Game.Do_it();
+            }
+            else
+            if (e.button == MouseButton.RightButton)
+            {
+                Input.RightButton = true;
+                SweeperSource.Judge_Pos(true);
+                Game.Flag();
+            }
             base.OnMouseUp(sender, e);
         }
         
@@ -59,6 +70,7 @@ namespace The_True_Minesweeper.Minesweeper
         {
             Input.MousePos = (sender as MainWindow).
                 AsCenter(new Vector2(e.x, e.y));
+
             base.OnMouseMove(sender, e);
         }
     }

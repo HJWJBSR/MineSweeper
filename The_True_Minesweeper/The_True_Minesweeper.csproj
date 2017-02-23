@@ -32,22 +32,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Manager.Animation">
+    <Reference Include="Common.Manager.Animation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\New\ASNET.COMMON\Common.Manager.Animation.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Manager.Device">
+    <Reference Include="Common.Manager.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\New\ASNET.COMMON\Common.Manager.Device.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Manager.GameWindow">
+    <Reference Include="Common.Manager.GameWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\New\ASNET.COMMON\Common.Manager.GameWindow.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Manager.Information">
+    <Reference Include="Common.Manager.Information, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\New\ASNET.COMMON\Common.Manager.Information.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Manager.Physics">
+    <Reference Include="Common.Manager.Physics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\New\ASNET.COMMON\Common.Manager.Physics.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Manager.Window">
+    <Reference Include="Common.Manager.Window, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\New\ASNET.COMMON\Common.Manager.Window.dll</HintPath>
     </Reference>
     <Reference Include="System" />

@@ -23,20 +23,6 @@ namespace The_True_Minesweeper.Minesweeper
         {
             Player.Update(PassTime);
 
-            if (Input.LeftButton)
-            {
-                Console.Write(Input.MousePos.x); Console.Write(' ');
-                Console.Write(Input.MousePos.y);
-                Player.Judge_Pos(true); // -2 -1 0 +
-                Game.Do_it();
-            }
-
-            if (Input.RightButton)
-            {
-                Player.Judge_Pos(true);
-                Game.Flag();
-            }
-
             PhysicsWorld.Update(PassTime);
         }
     }
